@@ -8,6 +8,7 @@ single-owner hosted course demo described in `docs/engineering/hosted-demo.md`.
 
 - `make setup`: passed with network permission.
 - `make check-6`: passed, 13 tests plus TypeScript checking.
+- Full frontend suite: 109 files and 1,479 tests passed.
 - `make build`: passed; Vite reports its existing large-bundle warning.
 - Backend startup/owner subset: 6 passed (`test_hosted_demo.py`, selecting
   `hosted_mode_comes or public_host or resolve_returns`).
@@ -23,7 +24,8 @@ single-owner hosted course demo described in `docs/engineering/hosted-demo.md`.
 
 Start Docker Desktop on Windows and enable this distro under Settings →
 Resources → WSL Integration. Confirm `docker info` succeeds inside WSL.
-The Supabase CLI downloaded for this session lives in
+Supabase CLI 3.2.0 was installed, but `supabase db start` failed to inspect
+the Docker service. The CLI downloaded for this session lives in
 `/tmp/sourcecado-tools/node_modules/.bin`; add that directory to PATH for
 this session (or install the CLI persistently).
 
